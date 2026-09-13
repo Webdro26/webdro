@@ -7,7 +7,7 @@ const projects = [
     type: "Burger Brand Website",
     cls: "project-one",
     image: "/projects/undr-ctrl.png",
-    link: "YOUR_UNDR_CTRL_WEBSITE_URL",
+    link: "https://undrctrlburgers.in/",
   },
 
   {
@@ -16,15 +16,15 @@ const projects = [
     type: "Jewellery Website",
     cls: "project-two",
     image: "/projects/anvith-dazzle.png",
-    link: "YOUR_ANVITH_DAZZLE_WEBSITE_URL",
+    link: "https://anvithdazzle.in/",
   },
    {
     n: "03",
-    title: "Webdro",
-    type: "Digital Agency Website",
+    title: "VBuild Ventures",
+    type: "Construction Company Website",
     cls: "project-three",
-    image: "/projects/webdro.png",
-    link: "https://webdro26.vercel.app/",
+    image: "/projects/vbuild-ventures.png",
+    link: "https://vbuildventures.com/",
   },
 ];
 

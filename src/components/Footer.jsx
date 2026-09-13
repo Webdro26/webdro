@@ -87,7 +87,7 @@ function SocialLinks() {
     <div className="social-icons">
 
       <a
-        href="https://www.instagram.com/webdro26?igsh=MW9qa2lpN3Y5cWhnMw==&igsi=MW9qa2lpN3Y5cWhnMw=="
+        href="https://www.instagram.com/webdro26/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
@@ -107,7 +107,7 @@ function SocialLinks() {
       </a>
 
       <a
-        href="https://wa.me/8883091192"
+         href="https://wa.me/918883091192"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"

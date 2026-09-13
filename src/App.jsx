@@ -63,27 +63,27 @@ const projects = [
   {
     n: '01',
     title: 'Undr Ctrl',
-    type: 'Burger Brand Website',
+    type: 'Cafe',
     cls: 'project-one',
     image: '/projects/undr-ctrl.png',
-    link: 'YOUR_UNDR_CTRL_WEBSITE_URL',
+    link: 'https://undrctrlburgers.in/',
   },
   {
     n: '02',
     title: 'Anvith Dazzle',
-    type: 'Jewellery Website',
+    type: 'Jewellery Shop',
     cls: 'project-two',
     image: '/projects/anvith-dazzle.png',
-    link: 'YOUR_ANVITH_DAZZLE_WEBSITE_URL',
+    link: 'https://anvithdazzle.in/',
   },
 
   {
     n: "03",
-    title: "Webdro",
-    type: "Digital Agency Website",
+    title: "VBuild Ventures",
+    type: "Construction Company Website",
     cls: "project-three",
-    image: "/projects/webdro.png",
-    link: "https://webdro26.vercel.app/",
+    image: "/projects/vbuild-ventures.png",
+    link: "https://vbuildventures.com/",
   },
   
 ];
@@ -176,7 +176,7 @@ function SocialLinks({ dark = false }) {
     <div className={`social-icons ${dark ? 'social-icons-dark' : ''}`}>
 
       <a
-        href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
+        href="https://www.instagram.com/webdro26/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
@@ -186,7 +186,7 @@ function SocialLinks({ dark = false }) {
       </a>
 
       <a
-        href="https://www.linkedin.com/company/YOUR_LINKEDIN_USERNAME/"
+        href="https://www.linkedin.com/in/webdro/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
@@ -206,7 +206,7 @@ function SocialLinks({ dark = false }) {
       </a>
 
       <a
-        href="https://github.com/YOUR_GITHUB_USERNAME"
+        href="https://github.com/Webdro26"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"

@@ -4356,3 +4356,805 @@ footer,
   }
 
 }
+/* =========================================================
+   FIX SOCIAL LINK CLICK
+   ========================================================= */
+
+footer .social-icon,
+.site-footer .social-icon{
+  position:relative !important;
+  z-index:10 !important;
+
+  pointer-events:auto !important;
+
+  cursor:pointer !important;
+}
+
+footer .social-icon svg,
+.site-footer .social-icon svg{
+  pointer-events:none !important;
+}
+/* =========================================================
+   WEBDRO — FINAL MOBILE EXPERIENCE
+   Mobile spacing + touch interactions + visual motion
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  /* =======================================================
+     HERO — REMOVE EXCESSIVE EMPTY SPACE
+     ======================================================= */
+
+  .hero {
+    min-height: auto !important;
+
+    padding-top: 105px !important;
+    padding-bottom: 65px !important;
+
+    justify-content: flex-start !important;
+  }
+
+  .hero h1 {
+    margin-top: 18px !important;
+  }
+
+  .hero-bottom {
+    margin-top: 25px !important;
+    gap: 22px !important;
+  }
+
+
+  /* =======================================================
+     HERO — SUBTLE AMBIENT MOTION
+     ======================================================= */
+
+  .orb-a {
+    animation: webdroMobileOrbA 10s ease-in-out infinite !important;
+  }
+
+  .orb-b {
+    animation: webdroMobileOrbB 13s ease-in-out infinite !important;
+  }
+
+
+  /* =======================================================
+     EXPLORE BUTTON — TOUCH
+     ======================================================= */
+
+  .round-link {
+    transition:
+      transform .25s ease,
+      background .25s ease,
+      border-color .25s ease,
+      color .25s ease !important;
+  }
+
+  .round-link:active {
+    transform: scale(.95) !important;
+
+    background: var(--accent) !important;
+
+    border-color: var(--accent) !important;
+
+    color: #08080a !important;
+  }
+
+
+  /* =======================================================
+     SERVICES — TOUCH INTERACTION
+     ======================================================= */
+
+  .service-card {
+    transition:
+      transform .3s cubic-bezier(.22,1,.36,1),
+      border-color .3s ease,
+      background .3s ease,
+      box-shadow .3s ease !important;
+  }
+
+  .service-card:active {
+
+    transform:
+      translateY(-3px)
+      scale(.985) !important;
+
+    border-color:
+      rgba(180,181,237,.65) !important;
+
+    background:
+      #151519 !important;
+
+    box-shadow:
+      0 16px 45px rgba(0,0,0,.22),
+      0 0 30px rgba(180,181,237,.10) !important;
+  }
+
+
+  /* Service glow appears on touch */
+
+  .service-card:active::before {
+
+    transform:scale(1.35) !important;
+  }
+
+
+  /* Service arrow */
+
+  .service-card:active .service-arrow {
+
+    color:var(--accent) !important;
+
+    transform:
+      translate(4px,-4px) !important;
+  }
+
+
+  /* Bottom line */
+
+  .service-card:active .service-line {
+
+    transform:scaleX(1) !important;
+  }
+
+
+  /* =======================================================
+     WORK — MOBILE IMAGE FIT
+     ======================================================= */
+
+  .work-grid {
+    display:block !important;
+  }
+
+  .project,
+  .project:nth-child(2) {
+
+    margin:
+      0 0 52px !important;
+
+    transition:
+      transform .3s cubic-bezier(.22,1,.36,1) !important;
+  }
+
+
+  .project-visual,
+  .project-one .project-visual,
+  .project-two .project-visual {
+
+    width:100% !important;
+
+    height:auto !important;
+
+    min-height:0 !important;
+
+    aspect-ratio:16 / 10 !important;
+
+    padding:0 !important;
+
+    overflow:hidden !important;
+
+    border-radius:22px !important;
+
+    background:#111 !important;
+
+    display:flex !important;
+
+    align-items:center !important;
+
+    justify-content:center !important;
+  }
+
+
+  .project-image {
+
+    width:100% !important;
+
+    height:100% !important;
+
+    object-fit:contain !important;
+
+    object-position:center !important;
+
+    display:block !important;
+
+    transform:none !important;
+
+    transition:
+      transform .45s cubic-bezier(.22,1,.36,1),
+      filter .35s ease !important;
+  }
+
+
+  /* Works touch */
+
+  .project:active {
+
+    transform:
+      scale(.985) !important;
+  }
+
+  .project:active .project-image {
+
+    transform:
+      scale(.97) !important;
+
+    filter:
+      brightness(.92)
+      saturate(1.08) !important;
+  }
+
+
+  /* =======================================================
+     PROJECT VIEW BUTTON
+     ======================================================= */
+
+  .project-view {
+
+    transition:
+      transform .25s ease,
+      background .25s ease !important;
+  }
+
+  .project:active .project-view {
+
+    transform:
+      scale(.94) !important;
+  }
+
+
+  /* =======================================================
+     ABOUT — TOUCH RESPONSE
+     ======================================================= */
+
+  .about h2 {
+    transition:
+      transform .35s cubic-bezier(.22,1,.36,1) !important;
+  }
+
+  .about h2:active {
+
+    transform:
+      translateX(5px) !important;
+  }
+
+
+  /* =======================================================
+     CONTACT BUTTON
+     ======================================================= */
+
+  .contact-btn {
+
+    transition:
+      transform .25s ease,
+      box-shadow .25s ease !important;
+  }
+
+  .contact-btn:active {
+
+    transform:
+      scale(.96) !important;
+
+    box-shadow:
+      0 10px 30px
+      rgba(180,181,237,.18) !important;
+  }
+
+
+  /* =======================================================
+     CONTACT INPUTS
+     ======================================================= */
+
+  .contact input:focus,
+  .contact textarea:focus {
+
+    border-color:
+      var(--accent) !important;
+
+    box-shadow:
+      0 0 0 4px
+      rgba(180,181,237,.10) !important;
+  }
+
+
+  /* =======================================================
+     SOCIAL ICONS
+     ======================================================= */
+
+  .social-icon {
+
+    transition:
+      transform .25s ease,
+      background .25s ease,
+      border-color .25s ease !important;
+  }
+
+  .social-icon:active {
+
+    transform:
+      scale(.90) !important;
+
+    background:
+      var(--accent) !important;
+
+    border-color:
+      var(--accent) !important;
+
+    color:
+      #08080a !important;
+  }
+
+
+  /* =======================================================
+     MOBILE MENU LINKS
+     ======================================================= */
+
+  .mobile-menu a {
+
+    transition:
+      color .25s ease,
+      padding-left .25s ease,
+      background .25s ease !important;
+  }
+
+  .mobile-menu a:active {
+
+    color:
+      var(--accent) !important;
+
+    padding-left:
+      8px !important;
+  }
+
+
+  /* =======================================================
+     NAV MENU BUTTON
+     ======================================================= */
+
+  .menu {
+
+    transition:
+      transform .25s ease,
+      background .25s ease !important;
+  }
+
+  .menu:active {
+
+    transform:
+      scale(.90) !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE HERO ORB ANIMATION
+   ========================================================= */
+
+@keyframes webdroMobileOrbA {
+
+  0% {
+    transform:
+      translate3d(0,0,0)
+      scale(1);
+  }
+
+  50% {
+    transform:
+      translate3d(-18px,20px,0)
+      scale(1.06);
+  }
+
+  100% {
+    transform:
+      translate3d(0,0,0)
+      scale(1);
+  }
+
+}
+
+
+@keyframes webdroMobileOrbB {
+
+  0% {
+    transform:
+      translate3d(0,0,0)
+      scale(1);
+  }
+
+  50% {
+    transform:
+      translate3d(16px,-14px,0)
+      scale(1.08);
+  }
+
+  100% {
+    transform:
+      translate3d(0,0,0)
+      scale(1);
+  }
+
+}
+/* =========================================================
+   MOBILE — REDUCE HERO TO SERVICES GAP
+   ========================================================= */
+
+@media (max-width: 800px){
+
+  .hero{
+    min-height:auto !important;
+
+    padding-top:105px !important;
+    padding-bottom:35px !important;
+
+    justify-content:flex-start !important;
+  }
+
+  .hero-bottom{
+    margin-top:24px !important;
+  }
+
+  .services{
+    padding-top:45px !important;
+  }
+
+}
+/* =========================================================
+   MOBILE SERVICES — PREMIUM TOUCH EFFECT
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .service-card {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+      transform .35s cubic-bezier(.22, 1, .36, 1),
+      border-color .35s ease,
+      background .35s ease,
+      box-shadow .35s ease;
+  }
+
+  /* subtle light sweep */
+  .service-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    right: -70px;
+    top: -70px;
+
+    border-radius: 50%;
+
+    background: rgba(180,181,237,.08);
+
+    filter: blur(25px);
+
+    transition:
+      transform .5s ease,
+      opacity .5s ease;
+  }
+
+  /* touch response */
+  .service-card:active {
+    transform: scale(.975) translateY(-2px);
+
+    border-color: rgba(180,181,237,.65);
+
+    background: #151519;
+
+    box-shadow:
+      0 15px 40px rgba(0,0,0,.25),
+      0 0 30px rgba(180,181,237,.08);
+  }
+
+  .service-card:active::after {
+    transform: scale(2);
+  }
+
+  .service-card:active .service-arrow {
+    color: var(--accent);
+
+    transform:
+      translate(4px,-4px);
+  }
+
+}
+/* =========================================================
+   MOBILE WORKS — IMAGE FIT + PREMIUM TOUCH
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .project {
+    transition:
+      transform .35s cubic-bezier(.22, 1, .36, 1);
+  }
+
+  .project:active {
+    transform: scale(.985);
+  }
+
+  .project-visual,
+  .project-one .project-visual,
+  .project-two .project-visual {
+
+    width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    aspect-ratio: 16 / 10 !important;
+
+    padding: 0 !important;
+
+    overflow: hidden !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border-radius: 22px !important;
+
+    background: #111 !important;
+  }
+
+  .project-image {
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: contain !important;
+    object-position: center !important;
+
+    transform: none !important;
+
+    transition:
+      transform .45s cubic-bezier(.22, 1, .36, 1),
+      filter .35s ease !important;
+  }
+
+  .project:active .project-image {
+
+    transform: scale(.97) !important;
+
+    filter:
+      brightness(.92)
+      saturate(1.08) !important;
+  }
+
+  .project-meta h3 {
+    transition:
+      color .3s ease;
+  }
+
+  .project:active .project-meta h3 {
+    color: var(--accent) !important;
+  }
+
+}
+/* =========================================================
+   MOBILE ABOUT — PREMIUM INTERACTION
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .about {
+    position: relative;
+  }
+
+  /* About text block */
+  .about-copy {
+    transition:
+      transform .4s cubic-bezier(.22, 1, .36, 1);
+  }
+
+  .about-copy:active {
+    transform: translateX(4px);
+  }
+
+  /* About visual */
+  .about-visual {
+    transition:
+      transform .45s cubic-bezier(.22, 1, .36, 1),
+      box-shadow .4s ease;
+  }
+
+  .about-visual:active {
+    transform: scale(.985);
+
+    box-shadow:
+      0 20px 50px rgba(0,0,0,.25);
+  }
+
+}
+/* =========================================================
+   MOBILE CONTACT — PREMIUM INTERACTION
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  /* Contact cards / blocks */
+  .contact-card {
+    transition:
+      transform .3s cubic-bezier(.22, 1, .36, 1),
+      border-color .3s ease,
+      box-shadow .3s ease;
+  }
+
+  .contact-card:active {
+    transform: scale(.98);
+
+    border-color: rgba(180,181,237,.65);
+
+    box-shadow:
+      0 15px 40px rgba(0,0,0,.22);
+  }
+
+
+  /* Inputs */
+  .contact input,
+  .contact textarea {
+    transition:
+      border-color .25s ease,
+      box-shadow .25s ease,
+      transform .25s ease;
+  }
+
+  .contact input:focus,
+  .contact textarea:focus {
+    border-color: var(--accent) !important;
+
+    box-shadow:
+      0 0 0 4px rgba(180,181,237,.10);
+
+    transform: translateY(-1px);
+  }
+
+
+  /* Main contact button */
+  .contact-btn {
+    transition:
+      transform .25s ease,
+      box-shadow .25s ease,
+      background .25s ease;
+  }
+
+  .contact-btn:active {
+    transform: scale(.96);
+
+    box-shadow:
+      0 12px 35px rgba(180,181,237,.18);
+  }
+
+
+  /* WhatsApp / email / phone links */
+  .contact a {
+    transition:
+      color .25s ease,
+      transform .25s ease;
+  }
+
+  .contact a:active {
+    color: var(--accent) !important;
+  }
+
+}
+/* =========================================================
+   MOBILE NAVBAR + FOOTER — FINAL POLISH
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  /* =========================
+     NAVBAR
+     ========================= */
+
+  .nav {
+    transition:
+      background .3s ease,
+      box-shadow .3s ease;
+  }
+
+  .menu {
+    transition:
+      transform .25s ease,
+      background .25s ease,
+      border-color .25s ease;
+  }
+
+  .menu:active {
+    transform: scale(.90);
+  }
+
+  .nav-logo,
+  .brand-logo {
+    transition:
+      transform .3s ease;
+  }
+
+  .nav-logo:active,
+  .brand-logo:active {
+    transform: scale(.94);
+  }
+
+
+  /* =========================
+     MOBILE MENU LINKS
+     ========================= */
+
+  .mobile-menu a {
+    transition:
+      color .25s ease,
+      transform .25s ease,
+      padding-left .25s ease;
+  }
+
+  .mobile-menu a:active {
+    color: var(--accent) !important;
+    transform: translateX(5px);
+  }
+
+
+  /* =========================
+     FOOTER
+     ========================= */
+
+  footer {
+    overflow: hidden;
+  }
+
+  .footer-brand {
+    transition:
+      transform .3s ease;
+  }
+
+  .footer-brand:active {
+    transform: scale(.97);
+  }
+
+
+  /* Footer links */
+
+  .footer-links a {
+    transition:
+      color .25s ease,
+      transform .25s ease;
+  }
+
+  .footer-links a:active {
+    color: var(--accent) !important;
+    transform: translateX(4px);
+  }
+
+
+  /* Social icons */
+
+  .social-icon {
+    transition:
+      transform .25s ease,
+      background .25s ease,
+      border-color .25s ease,
+      color .25s ease;
+  }
+
+  .social-icon:active {
+    transform: scale(.90);
+
+    background: var(--accent) !important;
+
+    border-color: var(--accent) !important;
+
+    color: #08080a !important;
+  }
+
+
+  /* Footer bottom text */
+
+  .footer-bottom {
+    gap: 14px;
+  }
+
+}
