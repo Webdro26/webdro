@@ -26,7 +26,17 @@ const projects = [
     image: "/projects/vbuild-ventures.png",
     link: "https://vbuildventures.com/",
   },
+{
+    n: "04",
+    title: "aganazhigai",
+    type: "Book Store ",
+    cls: "project-four",
+    image: "/projects/aganazhigai.png",
+    link: "https://www.aganazhigai.com/",
+  },
+
 ];
+
 
 function Arrow() {
   return <span className="arrow">↗</span>;
