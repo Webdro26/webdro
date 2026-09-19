@@ -5158,3 +5158,60 @@ footer .social-icon svg,
   }
 
 }
+/* =========================================================
+   MOBILE WORKS — PERFECT IMAGE FIT
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .project-visual,
+  .project-one .project-visual,
+  .project-two .project-visual {
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    aspect-ratio: auto !important;
+
+    padding: 0 !important;
+
+    overflow: hidden !important;
+
+    display: block !important;
+
+    border-radius: 20px !important;
+
+    background: #111 !important;
+  }
+
+
+  .project-image {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    max-width: 100% !important;
+
+    object-fit: initial !important;
+
+    object-position: center !important;
+
+    transform: none !important;
+  }
+
+
+  /* Keep the View Project button correctly positioned */
+
+  .project-visual .project-view,
+  .project-visual a {
+
+    position: absolute;
+  }
+
+}

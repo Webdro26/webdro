@@ -111,7 +111,7 @@ function SocialLinks() {
       </a>
 
       <a
-        href="https://wa.me/8883091192"
+        href="https://wa.me/918883091192"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"
@@ -185,7 +185,7 @@ function Contact() {
 
 
         <a
-          href="https://wa.me/8883091192"
+          href="https://wa.me/918883091192"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-btn"
